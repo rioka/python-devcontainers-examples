@@ -23,7 +23,8 @@ Our `devcontainer.json` contains is very minimal, and makes sense just for this 
   "customizations": {
     "vscode": {
       "extensions": [
-        ""
+        "ms-python.python",
+        "kevinrose.vsc-python-indent"
       ]
     }
   }
@@ -36,11 +37,11 @@ Our `devcontainer.json` contains is very minimal, and makes sense just for this 
 
 - `image` identifies the image the devcontainer will be created from.
 
-  In this case, we're using an image based on Debian 12 (`bookwork`), which contains python 3, plus additional tools (i.e., `htop`, `less`, `sudo`, etc.)
+  In this case, we're using an image based on Debian 12 (`bookwork`), which contains python 3.x, plus additional tools (i.e., `htop`, `less`, `sudo`, etc.)
 
   > A list of tools installed, in addition to Go, is available in [GitHub](https://github.com/devcontainers/images/blob/main/src/python/history/dev.md)
 
-- `customization` is optional, and allows you to customize the development environment "per-tool" (e.g. vscode or IntelliJ): in this case, we want "Go" to be installed when using VS Code.
+- `customization` is optional, and allows you to customize the development environment "per-tool" (e.g. vscode or IntelliJ): in this case, we want "Python" to be installed when using VS Code.
 
 Once we have `devcontainer.json`, we don't need anything else to start developing in Python; if we're using VS Code and "Dev Containers" extension installed ("ms-vscode-remote.remote-containers"), we can then open that folder in VS Code: since VS Code sees there's a `devcontainer.json`, it will offer to reopen the folder using DevContainers.
 
