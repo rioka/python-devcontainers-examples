@@ -1,0 +1,13 @@
+{
+  "name": "python",
+  "image": "mcr.microsoft.com/devcontainers/python:dev-3.13-bookworm",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "ms-python.python"
+      ]
+    }
+  },
+  "postCreateCommand": "pip install notebook ipykernel"
+}
