@@ -9,5 +9,5 @@
       ]
     }
   },
-  "postCreateCommand": "pip install notebook ipykernel"
+  "postCreateCommand": "./.devcontainer/postCreateCommand.sh"
 }
